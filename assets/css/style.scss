@@ -15,8 +15,13 @@
 }
 
 .thumb {
-	max-width: 33%;
+	max-width: 50%;
 	float: right;
+	margin: 10px;
+}
+
+.donotremove {
+	overflow: auto;
 }
 
 
