@@ -1,61 +1,83 @@
 ﻿<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
+<html lang="{{ site.lang | default: " en-US" }}">
+<head>
     <meta charset="UTF-8">
 
-{% seo %}
+    <title>EPHS Programming</title>
+    <meta property="og:title" content="ephs.club"/>
+    <meta property="og:locale" content="en_US"/>
+    <meta name="description" content="EPHS Programming Website"/>
+    <meta property="og:description" content="EPHS Programming Website"/>
+    <link rel="canonical" href="http://ephs.club/"/>
+    <meta property="og:url" content="http://ephs.club/"/>
+    <meta property="og:site_name" content="ephs.club"/>
+    <script type="application/ld+json">
+{"headline":"ephs.github.io","@type":"WebSite","url":"http://ephs.club/","name":"EPHS Programming","description":"EPHS Programming Website","@context":"http://schema.org"}
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">EPHS Programming</h1>
-      <h2 class="project-tagline"><i class="fa fa-map-marker"></i> Eden Praire High School, Eden Prairie, Minnesota</h2>
-    </section>
+</head>
+<body>
+<section class="page-header">
+    <h1 class="project-name">EPHS Programming</h1>
+    <h2 class="project-tagline"><i class="fa fa-map-marker"></i> Eden Praire High School, Eden Prairie, Minnesota</h2>
+</section>
 
-    <section class="main-content">
-          <h2>Explore Programming at EPHS</h2>
-          <p> The EPHS Programming Club is a group of students that get together to be passionate about programming. Whether a beginner or more experienced, the club hopes to inspire and intrigue all who are interested in programming.    
-          </p>
-          <h2>Activites</h2>
-          <p> You can explore the calender for a list of the club's activites 
-          <a href="https://calendar.google.com/calendar/embed?src=ephsprogramming%40gmail.com&amp;ctz=America/Chicago">here</a>
-          .
-          </p>
-          <h2>Projects</h2>
-          	<h3>Core Mockup – <a href="https://github.com/ephs/core">ephs/Core</a></h3>
-                    <img class="thumb ave" src="../assets/login_copy.png">
-          			<p>This mockup seeks to redesign Core in a more pleasing and thematic manner. The project includes a working login page and a reimagined vision for the core landing page. 
-          			</p>
-          			
-          		
-          		
-          			<h3>AP Java Review – <a href="https://github.com/ephs/ap-java-review">ephs/AP-Java-Review</a></h3>
-                    <img class="thumb ave" src="../assets/presentation.png">
-          			<p>This review of material in preparation for the AP Computer Science A test includes many unique multiple choice problems and several released free response problems. The project also includes an accompanying Eclipse project that has the free response worked out and examples of sorts. The review was used in preperation for the 2018 AP test. You can view the presentation at <a href="https://ephs.github.io/ap-java-review">ephs.github.io/AP-Java-Review</a>
-          			</p>
-          			
-          		
-      <footer class="site-footer">
+<section class="main-content">
+    <h2>Explore Programming at EPHS</h2>
+    <p> The EPHS Programming Club is a group of students that get together to be passionate about programming. Whether a
+        beginner or more experienced, the club hopes to inspire and intrigue all who are interested in programming.
+    </p>
+    <h2>Activites</h2>
+    <p> You can explore the calender for a list of the club's activites
+        <a href="https://calendar.google.com/calendar/embed?src=ephsprogramming%40gmail.com&amp;ctz=America/Chicago">here</a>
+        .
+    </p>
+    <h2>Projects</h2>
+    <h3>Core Mockup – <a href="https://github.com/ephs/core">ephs/Core</a></h3>
+    <img class="thumb ave" src="../assets/login_copy.png">
+    <p>This mockup seeks to redesign Core in a more pleasing and thematic manner. The project includes a working login
+        page and a reimagined vision for the core landing page.
+    </p>
+
+
+    <h3>AP Java Review – <a href="https://github.com/ephs/ap-java-review">ephs/AP-Java-Review</a></h3>
+    <img class="thumb ave" src="../assets/presentation.png">
+    <p>This review of material in preparation for the AP Computer Science A test includes many unique multiple choice
+        problems and several released free response problems. The project also includes an accompanying Eclipse project
+        that has the free response worked out and examples of sorts. The review was used in preperation for the 2018 AP
+        test. You can view the presentation at <a href="https://ephs.github.io/ap-java-review">ephs.github.io/AP-Java-Review</a>
+    </p>
+
+
+    <footer class="site-footer">
         {% if site.github.is_project_page %}
-          <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
+        <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a
+                href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
         {% endif %}
-      </footer>
-    </section>
+    </footer>
+</section>
 
-    {% if site.google_analytics %}
-      <script type="text/javascript">
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+{% if site.google_analytics %}
+<script type="text/javascript">
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', '{{ site.google_analytics }}', 'auto');
-        ga('send', 'pageview');
-      </script>
-    {% endif %}
-  </body>
+    ga('create', '{{ site.google_analytics }}', 'auto');
+    ga('send', 'pageview');
+</script>
+{% endif %}
+</body>
 </html>
