@@ -11,13 +11,15 @@
     <link rel="canonical" href="http://ephs.club/"/>
     <meta property="og:url" content="http://ephs.club/"/>
     <meta property="og:site_name" content="ephs.club"/>
-    <script type="application/ld+json">
+    <!--<script type="application/ld+json">
 {"headline":"ephs.github.io","@type":"WebSite","url":"http://ephs.club/","name":"EPHS Programming","description":"EPHS Programming Website","@context":"http://schema.org"}
     </script>
+    !-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="../assets/css/style.scss">
+    <link rel="stylesheet" href="../assets/css/theme.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
@@ -27,6 +29,7 @@
 </section>
 
 <section class="main-content">
+	<h1>Connect with us: <a href=https://discordapp.com/invite/JFTYSCb>discord.gg/JFTYSCb</a></h1>
     <h2>Explore Programming at EPHS</h2>
     <p> The EPHS Programming Club is a group of students that get together to be passionate about programming. Whether a
         beginner or more experienced, the club hopes to inspire and intrigue all who are interested in programming.
@@ -54,30 +57,7 @@
 
 
     <footer class="site-footer">
-        {% if site.github.is_project_page %}
-        <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a
-                href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
-        {% endif %}
     </footer>
 </section>
-
-{% if site.google_analytics %}
-<script type="text/javascript">
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', '{{ site.google_analytics }}', 'auto');
-    ga('send', 'pageview');
-</script>
-{% endif %}
 </body>
 </html>
